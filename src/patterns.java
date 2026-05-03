@@ -7,6 +7,11 @@ public void main(){
     pattern4(val);//reversed solid right angled triangle
     pattern5(val);//hollow right angled triangle
     pattern6(val);//reversed hollow right angled triangle
+    pattern7(val);//left tilted rhombus
+    pattern8(val);//right tilted rhombus
+    pattern9(val);
+    pattern10(val);
+    pattern11(val);
 }
 public void pattern1(int n){
     for(int i = 0; i < n; i++){
@@ -97,4 +102,54 @@ public void pattern6(int n){
         System.out.println();
     }
     System.out.println();
+}
+
+public void pattern7(int n){
+    for(int i = 0; i < n; i++){
+        for(int k = 0; k < i; k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < n; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern8(int n){
+    for(int i = n; i > 0; i--){
+        for(int k = 0; k < i-1; k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < n; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern9(int n){
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            System.out.print((i+1) + " ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern10(int n){
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            System.out.print((j+1) + " ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern11(int n){
+
 }
