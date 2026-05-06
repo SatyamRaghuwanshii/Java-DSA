@@ -5,13 +5,19 @@ public void main(){
     pattern2(val);//hollow square
     pattern3(val);//solid right angled triangle
     pattern4(val);//reversed solid right angled triangle
+    pattern11(val);// filped triangle
+    pattern12(val);// isosceles triangle
+    pattern13(val);// reverse isosceles triangle
+    pattern16(val);// number isosceles triangle
+    pattern17(val);// char isosceles triangle
+    pattern9(val);// number triangle
+    pattern10(val);// number triangle
+    pattern15(val);// number triangle
     pattern5(val);//hollow right angled triangle
     pattern6(val);//reversed hollow right angled triangle
     pattern7(val);//left tilted rhombus
     pattern8(val);//right tilted rhombus
-    pattern9(val);
-    pattern10(val);
-    pattern11(val);
+    pattern14(val);// dimond pattern
 }
 public void pattern1(int n){
     for(int i = 0; i < n; i++){
@@ -157,6 +163,96 @@ public void pattern11(int n){
         }
         for(int j = 0; j < i; j++){
             System.out.print("* ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern12(int n){
+    for(int i = 1; i <= n; i++){
+        for(int k = 0; k < n-i; k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < i; j++){
+            System.out.print("* ");
+        }
+        for(int l = 1; l < i; l++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern13(int n){
+    for (int i = 0; i < n; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print("  ");
+        }
+        for (int k = 0; k < n-i; k++){
+            System.out.print("* ");
+        }
+        for (int k = 1; k < n-i; k++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern14(int n){
+    for(int i = n - ((n/2)-1); i < n; i++){
+        for(int k = 0; k < (n-i); k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < i; j++){
+            System.out.print("* ");
+        }
+        for(int j = 0; j < i-1; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    pattern13(n);
+}
+
+public void pattern15(int n){
+    int k = 1;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            System.out.print((k) + " ");
+            k++;
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern16(int n){
+    int s = 1;
+    for(int i = 0; i < n; i++){
+        for(int k = 1; k < n-i; k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < i*2+1; j++){
+            System.out.print(s + " ");
+            s++;
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern17(int n){
+    int s = 65;
+    for(int i = 0; i < n; i++){
+        for(int k = 1; k < n-i; k++){
+            System.out.print("  ");
+        }
+        for(int j = 0; j < i*2+1; j++){
+            System.out.print((char) s + " ");
+            s++;
         }
         System.out.println();
     }
