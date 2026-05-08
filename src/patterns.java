@@ -17,7 +17,8 @@ public void main(){
     pattern6(val);//reversed hollow right angled triangle
     pattern7(val);//left tilted rhombus
     pattern8(val);//right tilted rhombus
-    pattern14(val);// dimond pattern
+    pattern14(val);// diamond pattern
+    pattern18(val);// hollow diamond
 }
 public void pattern1(int n){
     for(int i = 0; i < n; i++){
@@ -253,6 +254,32 @@ public void pattern17(int n){
         for(int j = 0; j < i*2+1; j++){
             System.out.print((char) s + " ");
             s++;
+        }
+        System.out.println();
+    }
+    System.out.println();
+}
+
+public void pattern18(int n){
+    for (int i = n - ((n/2)-2); i<n+1; i++){
+        for (int k = 0; k <= (n-i); k++){
+            System.out.print("  ");
+        }
+        for (int j = 0; j <= i+1; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    for (int i = 0; i<n; i++){
+        for (int j = 0; j<i; j++){
+            System.out.print("  ");
+        }
+        for (int j = 2*(n-i); j>1; j--){
+            if (j == 2*(n-i) || j==2){
+                System.out.print("* ");
+            }else {
+                System.out.print("  ");
+            }
         }
         System.out.println();
     }
