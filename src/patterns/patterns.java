@@ -1,4 +1,3 @@
-import java.util.*;
 public void main(){
     int val = 5;
     pattern1(val);//solid square
