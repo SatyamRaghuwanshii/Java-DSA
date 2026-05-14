@@ -4,10 +4,14 @@ public class methods {
     static void main () {
         //invoking a method
 //        methodName (arguments)
+        System.out.println(getMax(23,56));
 
         pattern1(5);
         pattern2(5);
 
+        int result = multiply(5,20);
+        System.out.println(result);
+        System.out.println(multiply(5,6));
     }
 
 
@@ -15,6 +19,10 @@ public class methods {
 //  returnType methodName (parameter){
 //      code;
 //  }
+    static int getMax(int a, int b){
+        int result = Math.max(a,b);
+        return result;
+    }
 
     static void pattern1 (int n) {
         for(int i = 1; i <= n; i++){
@@ -45,4 +53,10 @@ public class methods {
         }
         System.out.println();
     }
+
+    static int multiply (int x, int y){
+        int multiply = x * y;
+        return multiply;
+    }
+
 }
