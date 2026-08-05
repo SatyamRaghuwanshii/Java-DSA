@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Arrays;
 
-public class quickSort {
+public class mergeSort {
     public void main() {
         int[] arr = {4,6,3,7,8,2};
         mergeSort(arr,0, arr.length-1);
